@@ -19,5 +19,77 @@
     5. git status
 
 
+//
 
-lolllsadkasjhdas
+
+
+git checkout -b salik
+Switched to a new branch 'salik'
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git branch
+  master
+* salik
+
+C:\Users\Salik\OneDrive\Desktop\git commands>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git commit
+On branch salik
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git commit -m "changes in file done"
+On branch salik
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git add .
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git commit -m "changes in file done"
+[salik fee514f] changes in file done
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git merge salik
+Updating 9f4ec2f..fee514f
+Fast-forward
+ git_commands.txt | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\Salik\OneDrive\Desktop\git commands>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/salikongit/git_commands.git
+   9f4ec2f..fee514f  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\Salik\OneDrive\Desktop\git commands>
+
+
+
